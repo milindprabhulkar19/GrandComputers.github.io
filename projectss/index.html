@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+   
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo"</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1> GANESH PIMPALKAR</h1>
+        <h2> Furniture Designers</h2>
+        <p> Personalised Designs Your Way<br>Beautiful Homes Your Way.</p>
+    </div>
+<!------what we Design---->
+    </section>
+<!---- fist rows and images---->
+    <section class="Design">
+            <h1>What We Design</h1>
+
+            <div class="row">
+                <div class="design-col">
+                    <img src="modular_kitchens.PNG" alt="">
+                    <h3>Modular Kitchens</h3>
+                    <p>Kitchen design with more space and chimni which make 
+                       comfortable to cook food easily.
+                    </p>
+                </div>
+                <div class="design-col">
+                    <img src="wardrobes.PNG" alt="">
+                    <h3>Modular Wardrobes</h3>
+                    <p>Find the right size, the perfect shape and a chic
+                        design for a signature wardrobe.
+                    </p>
+                </div>
+                <div class="design-col">
+                    <img src="TV unit.PNG" alt="">
+                    <h3>TV Unit</h3>
+                    <p>TV unit design with more space which can use
+                        for the show piece of our home.
+                    </p>
+                </div>
+            </div>
+    </section>
+<!-----second rows and iamges-->
+    <section class="Design_2"> 
+        <div class="rows">
+            <div class="design-coll">
+                <img src="Mandir.PNG" alt="">
+                <h3>Modular Kitchens</h3>
+                <p>Kitchen design with more space and chimni which make 
+                   comfortable to cook food easily.
+                </p>
+                </div>
+                <div class="design-coll">
+                    <img src="Bed.PNG" alt="">
+                    <h3>Modular Kitchens</h3>
+                    <p>Kitchen design with more space and chimni which make 
+                       comfortable to cook food easily.
+                    </p>
+                    </div>
+                    <div class="design-coll">
+                        <img src="Access.PNG" alt="">
+                        <h3>Modular Kitchens</h3>
+                        <p>Kitchen design with more space and chimni which make 
+                           comfortable to cook food easily.
+                        </p>
+        </div> 
+        </div>               
+
+    </section>
+<!----third section-->
+    <section>
+        <div class="fotter">
+            <h1>The Beautiful Home Service Advantage</h1>
+        </div>
+
+
+    </section>
+
+
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,117 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .slider{
-            width: 800px;
-            height: 500px;
-            border-radius: 10px;
-            overflow: hidden;
-        
-        }
-        .slides{
-            width: 500px;
-            height: 500px;
-            display: flex;
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-        }
-        .slides input{
-            display: none;
-        }
-        .slide{
-            width: 20%;
-            transition: 2s;
-        }
-        .slide img{
-            width: 800px;
-            height: 500px;
-        }
-        .navigation-manual{
-            position: absolute;
-            width: 800px;
-            margin-top: -40px;
-            display: flex;
-            justify-content: center;
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
 
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
 
-        }
-        .manual-btn{
-            border: 2px solid #40D3DC;
-            padding: 5px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 1s;
-        }
-        .manual-btn:not(:last-child){
-            margin-right: 40px;
-        }
-        .manual-btn:hover{
-            background: #40D3DC;
-        }
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
 
-        #radio1:checked ~ .first{
-            margin-left: 0;
-        }
-        #radio2:checked ~ .first{
-            margin-left: -20%;
-        }
-        #radio3:checked ~ .first{
-            margin-left: -40%;
-        }
-        #radio4:checked ~ .first{
-            margin-left: -60%;
-        }
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
 
-    </style>
-</head>
-<body>
-    <div class="slider">
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio1">
-
-            <div class="slide first">
-                <img src="modular_kitchens2.PNG" alt="">
-            </div>
-            <div class="slide">
-                <img src="modular_kitchens3.PNG" alt="">
-            </div>
-            <div class="slide">
-                <img src="modular_kitchens4.PNG" alt="">
-            </div>
-            <div class="slide">
-                <img src="modular_kitchens5.PNG" alt="">
-            </div>
-            <!--start-->
-            <div class="navigation">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-            <!--end-->
-        </div>
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-        </div>
-    </div>
-    
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>  
 </body>
 </html>

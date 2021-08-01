@@ -20,7 +20,7 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 150px;
+    width: 140px;
 }
 .nav-links{
     flex: 1;
@@ -111,7 +111,7 @@ nav .fa{
     width: 85%;
     margin: auto;
     text-align: center;
-    padding-top: 45px;
+    padding-top: 35px;
 }
 h1{
     font-size: 36px;
@@ -125,7 +125,7 @@ h1{
 }
 .design-col{
     flex-basis: 31%;
-    background: #fce7e7;
+    background: #f8dda2;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -142,21 +142,21 @@ img{
     padding-top: 15px;
 }
 .rows{
-    margin-top: 2%;
+    margin-top: -1%;
     display: flex;
     justify-content: space-between;
 }
 .design-coll{
     flex-basis: 31%;
-    background: #fce7e7;
+    background: #f8dda2;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
 }
 img{
-    height: 80%;
-    width: 80%;
+    height: 75%;
+    width: 82%;
 }
 .fotter{
     width: 85%;

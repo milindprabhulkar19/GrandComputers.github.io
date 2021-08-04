@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furniture Designer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" type="image/png" href="GG.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-</head>
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="logo2.png".png">
 
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+
+</head>
 <body>
+    <nav>
+        <a href="index.html"><img src="logo4.png"></a>
+        <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="gallery.html">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fa fa-bars"></i>
+        </label>
+    </nav>
+
     <section class="header">
-        <nav>
-            <a href="index.html"><img src="GG.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fas fa-times" onclick="hideMenu()"></i>
-                <!--<i class="fa fa-times" onclick="hideMenu()"></i>-->  
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="gallery.html">PROJECTS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-           <!--- <i class="fa fa-bars" onclick="showMenu()"></i>-->
-            <i class="fas fa-bars" onclick="showMenu()"></i>
-        </nav>
     <div class="text-box">
         <h1> GANESH S.PIMPALKAR</h1>
         <h2> Furniture Designers</h2>
@@ -109,7 +118,8 @@
                 ii)	Modular Sliding Door Wardrobe 
                 iii)	Modular Door Wardrobe
                 iv)	TV Panel Unit 
-                v)	Wooden Wall Panelling 
+                iv)	TV Panel Unit 
+                v)	Wooden Wall Panelling
                 vi)	Dressing Unit
                 vii)	A.C Wall Panelling
                 viii)	Computer table or study table</p>
@@ -148,7 +158,7 @@
 
     <section class="cta">
         <h1>For More Details</h1>
-        <a href="" class="hero-btn">CONTACT US</a>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
     </section>
 
     <section class="footer">
@@ -177,5 +187,6 @@
             navLinks.style.right="-200px";
         }
     </script>
+
 </body>
 </html>

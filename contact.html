@@ -4,39 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furniture Designer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/png" href="GG.png">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="logo2.png".png">
+
     <link rel="stylesheet" href="style3.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
 </head>
 <body>
+    <nav>
+        <a href="#"><img src="logo4.png"></a>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="gallery.html">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a class="active" href="contact.html">CONTACT</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fa fa-bars"></i>
+        </label>
+    </nav>
+
     <section class="header">
-        <nav>
-            <a href="index.html"><img src="GG.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fas fa-times" onclick="hideMenu()"></i>
-                <!--<i class="fa fa-times" onclick="hideMenu()"></i>-->  
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-           <!--- <i class="fa fa-bars" onclick="showMenu()"></i>-->
-            <i class="fas fa-bars" onclick="showMenu()"></i>
-        </nav>
     <div class="text-box">
         <h1> GANESH S.PIMPALKAR</h1>
         <h2> Furniture Designers</h2>
-        <p> Projects</p>
+        <p> Personalised Designs Your Way<br>Beautiful Homes Your Way.</p>
     </div>
 <!------what we Design---->
-    </section>
+    </section> 
 
     <section class="contact">
         <div class="content">
